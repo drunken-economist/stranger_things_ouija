@@ -9,6 +9,15 @@ A raspberry pi 3 acts as a twitter client to find all the tweets with a given ha
 
 #Usage
 
+#Troubleshooting
+**Nothing lights up at all. Your project is garbage and I want my money back**
+
+**Only the first 26/50 lights on my string of 50/100 lights works!**
+The config.ini file has light assignments. These are manual to allow you to adjust each them depending on your actual construction. If the config.ini file can't be read, message.py will default to using the leds assigned 0-25 (first 26 lights from the controller)
+
+**This lights work in the initial test, but then turn off and don't light up anymore**
+Is anyone tweeting at them? If not, I suggest making friends to tweet or convincing 4chan to send you messages. If they *are* tweeting at you and no messages are being passed through, log on to your Pi and check the logging info. There might be something useful there if I ever learn my lesson and add good logging
+
 #FAQ
 **Why not build the whole thing on the arduino? This seems like overkill**
 Because I'm bad at C and I had the Pi laying around already.
