@@ -10,8 +10,8 @@ A raspberry pi 3 acts as a twitter client to find all the tweets with a given ha
 #Usage
 
 #FAQ
-*Why not build the whole thing on the arduino? This seems like overkill*
+**Why not build the whole thing on the arduino? This seems like overkill**
 Because I'm bad at C and I had the Pi laying around already.
 
-*Okay then, why not build the whole thing on the Pi? This seems like overkill*
+**Okay then, why not build the whole thing on the Pi? This seems like overkill**
 The WS2812 standard requires some pretty precise timing, which the Pi isn't really capable of without some massaging. If you're feeling ambitious, submit it a PR using [jgraff/rpi_ws281x](https://github.com/jgarff/rpi_ws281x) library and I will gleefully merge it without reviewing.
