@@ -11,6 +11,7 @@ A raspberry pi 3 acts as a twitter client to find all the tweets with a given ha
 
 #Troubleshooting
 **Nothing lights up at all. Your project is garbage and I want my money back**
+For real though, if you're having issues you can't figure out, shoot me a message, I'm happy to help!
 
 **Only the first 26/50 lights on my string of 50/100 lights works!**
 The config.ini file has light assignments. These are manual to allow you to adjust each them depending on your actual construction. If the config.ini file can't be read, message.py will default to using the leds assigned 0-25 (first 26 lights from the controller)
