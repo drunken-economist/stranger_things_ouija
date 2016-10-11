@@ -8,6 +8,11 @@ A raspberry pi 3 acts as a twitter client to find all the tweets with a given ha
 #Wiring
 
 #Usage
+1. SSH to your raspi and `git clone https://github.com/drunken-economist/stranger_things_ouija/`
+1. Create a new twitter app for yourself: https://apps.twitter.com/, and authorize it to your account. 
+1. Open the config file with `nano config.inig`. Copy the `consumer key`, `consumer secret`, `access token` and `access token secret` to the config file. Lastly, update the search term in the config file to reflect whatever content you want to find and display from twitter. This step is wholly optional if you want to just have the lights send pre-made messages instead, or write your own data source.
+2. Update the LED mapping on the config. This annoyingly manual because each prop is constructed differently. By default, it's mapped for a string of 50 LEDs with the controller on the Z end, with every other light representing a letter, except for A and B on consecutive lights. TBH the alphabet should have only 25 letters and this would be less messy.
+
 
 #Troubleshooting
 **Nothing lights up at all. Your project is garbage and I want my money back**  
