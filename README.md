@@ -5,8 +5,6 @@ A replica of the christmas light "ouija" board from Stranger Things.
 
 A raspberry pi 3 acts as a twitter client to find all the tweets with a given hashtag, sanitizes them and splits them into characters, before converting them to a light index and passing along to an arduino for ultimate control of the lights. The arduino takes the indeces and, using some awesome libraries from Adafruit, sends them to a string of WS2812 (or WS2812b) addressable LEDs. 
 
-#Installation
-
 #Wiring
 
 #Usage
