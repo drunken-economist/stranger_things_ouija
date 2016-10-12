@@ -11,6 +11,7 @@ consumer_key = config.get('twitter', 'consumer_key')
 consumer_secret = config.get('twitter', 'consumer_secret')
 access_token = config.get('twitter', 'access_token')
 access_token_secret = config.get('twitter', 'access_token_secret')
+search_term = config.get('twitter', 'search_term')
 
 class tweetListener(StreamListener):
     def on_status(self, status):
@@ -24,6 +25,4 @@ if __name__ == '__main__':
     auth.set_access_token(access_token, access_token_secret)
 
     stream = Stream(auth, l)
-    stream.filter(track=['football'])
-
-
+    stream.filter(track=[search_term])
